@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trà Tĩnh Trí — Thư giãn tâm trí · Tăng sự tập trung · Tái tạo năng lượng</title>
+  <meta name="description" content="Trà Tĩnh Trí — trà thảo mộc dạng bột pha uống từ Thổ Nhân Sâm. Giúp thư giãn tinh thần, tăng tập trung, xua tan stress cho người làm việc trí óc áp lực cao." />
+  <meta property="og:title" content="Trà Tĩnh Trí — Trà thảo mộc cho trí óc minh mẫn" />
+  <meta property="og:description" content="Thảo mộc tự nhiên từ Thổ Nhân Sâm. Thư giãn tâm trí · Tăng sự tập trung · Tái tạo năng lượng." />
+  <meta property="og:image" content="vn-11134207-81ztc-moqgdon7tp8sab.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:    '#040C24',
+            navy:   '#081A45',
+            navy2:  '#0C2358',
+            steel:  '#16306E',
+            gold:   '#C9A24B',
+            gold2:  '#E6C868',
+            goldlt: '#F0DA9A',
+            cream:  '#F3EAD3',
+            mist:   '#C7D2EC',
+          },
+          fontFamily: {
+            display: ['"Bodoni Moda"', 'serif'],
+            sans: ['Jost', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { font-family: 'Jost', sans-serif; }
+    body { background-color: #040C24; }
+
+    .font-display { letter-spacing: .01em; }
+
+    /* Gold text gradient */
+    .text-gold-grad {
+      background: linear-gradient(180deg, #F0DA9A 0%, #E6C868 38%, #C9A24B 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      /* Room for Vietnamese stacked diacritics (dấu mũ/ngã trên, dấu nặng dưới) */
+      line-height: 1.25;
+      padding-block: 0.14em;
+    }
+    /* Display headings need looser leading so diacritics aren't clipped */
+    h1.text-gold-grad, h2.text-gold-grad { line-height: 1.18; }
+    .gold-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C9A24B 35%, #E6C868 50%, #C9A24B 65%, transparent);
+    }
+
+    /* Glass card */
+    .glass {
+      background: linear-gradient(160deg, rgba(22,48,110,.55), rgba(8,26,69,.35));
+      border: 1px solid rgba(201,162,75,.28);
+      backdrop-filter: blur(10px);
+    }
+    .glass:hover { border-color: rgba(230,200,104,.6); }
+
+    .gold-ring {
+      border: 1px solid rgba(201,162,75,.45);
+      box-shadow: 0 0 0 1px rgba(201,162,75,.12) inset, 0 10px 40px -12px rgba(0,0,0,.7);
+    }
+
+    /* Starfield + skyline atmosphere */
+    .nightsky {
+      background:
+        radial-gradient(900px 500px at 80% -10%, rgba(40,78,160,.45), transparent 60%),
+        radial-gradient(700px 400px at 10% 0%, rgba(201,162,75,.10), transparent 55%),
+        linear-gradient(180deg, #061337 0%, #040C24 60%, #030A1E 100%);
+    }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease-out, transform .7s ease-out; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    .float { animation: floaty 6s ease-in-out infinite; }
+
+    @keyframes twinkle { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+    .star { animation: twinkle 3.5s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+      .float, .star { animation: none !important; }
+      html { scroll-behavior: auto; }
+    }
+
+    ::selection { background: rgba(230,200,104,.3); }
+    /* gold scrollbar accent on webkit */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #040C24; }
+    ::-webkit-scrollbar-thumb { background: #16306E; border-radius: 8px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C9A24B; }
+  </style>
+</head>
+
+<body class="text-mist antialiased selection:text-cream">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="fixed top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 z-50">
+    <nav class="max-w-7xl mx-auto glass rounded-2xl px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2.5 group">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-gold/60">
+          <!-- crescent + leaf -->
+          <svg viewBox="0 0 24 24" class="w-5 h-5 text-gold2" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+        </span>
+        <span class="font-display text-lg sm:text-xl font-700 tracking-wide text-gold-grad">TRÀ TĨNH TRÍ</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-7 text-sm font-400 text-mist/80">
+        <a href="#problem" class="hover:text-gold2 transition-colors duration-200">Vấn đề</a>
+        <a href="#benefits" class="hover:text-gold2 transition-colors duration-200">Công dụng</a>
+        <a href="#journey" class="hover:text-gold2 transition-colors duration-200">Nguồn gốc</a>
+        <a href="#ingredient" class="hover:text-gold2 transition-colors duration-200">Thành phần</a>
+        <a href="#who" class="hover:text-gold2 transition-colors duration-200">Ai nên dùng</a>
+        <a href="#how" class="hover:text-gold2 transition-colors duration-200">Cách dùng</a>
+      </div>
+
+      <a href="https://vn.shp.ee/UcaXDjbS" target="_blank" rel="noopener" class="cursor-pointer inline-flex items-center gap-2 rounded-full bg-gradient-to-b from-gold2 to-gold px-4 sm:px-5 py-2 text-ink text-sm font-600 shadow-lg shadow-gold/20 hover:from-goldlt hover:to-gold2 transition-all duration-200">
+        Đặt mua
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative nightsky overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <!-- skyline silhouette -->
+    <svg class="absolute bottom-0 left-0 w-full h-40 sm:h-56 text-[#030A1E]" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+      <path d="M0 200V90h60v-25h28v40h44V70h22v60h40V40h20v18h26v72h50V100h34v22h30V60h18v70h54V84h26v46h40V50h22v34h28v46h46V96h30v34h50V70h20v22h30v38h48V110h34v20h40V64h22v28h30v38h50V90h26v40h44V120h30v10h60V200H0Z"/>
+    </svg>
+
+    <!-- stars -->
+    <span class="star absolute top-24 left-[12%] w-1 h-1 rounded-full bg-goldlt"></span>
+    <span class="star absolute top-40 left-[28%] w-1.5 h-1.5 rounded-full bg-white/80" style="animation-delay:.6s"></span>
+    <span class="star absolute top-28 right-[22%] w-1 h-1 rounded-full bg-goldlt" style="animation-delay:1.1s"></span>
+    <span class="star absolute top-52 right-[12%] w-1.5 h-1.5 rounded-full bg-white/70" style="animation-delay:1.6s"></span>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
+      <!-- copy -->
+      <div class="reveal text-center lg:text-left">
+        <span class="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs sm:text-sm font-500 text-goldlt tracking-wide">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7L12 16.9 5.7 20.3 8 13.3 2 8.9h7.6z"/></svg>
+          Dược liệu quý từ Thổ Nhân Sâm
+        </span>
+
+        <h1 class="mt-6 font-display font-800 text-4xl sm:text-6xl lg:text-7xl text-gold-grad">
+          TRÀ TĨNH TRÍ
+        </h1>
+        <p class="mt-3 font-display italic text-lg sm:text-xl text-cream/90">Trà thảo mộc dạng bột pha uống</p>
+
+        <p class="mt-6 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-mist/85 leading-relaxed">
+          Một tách trà ấm cho tâm trí an yên — giúp bạn <span class="text-gold2 font-500">thư giãn tinh thần</span>,
+          <span class="text-gold2 font-500">tập trung sâu</span> và <span class="text-gold2 font-500">tái tạo năng lượng</span>
+          giữa những ngày làm việc căng thẳng.
+        </p>
+
+        <!-- pillars -->
+        <div class="mt-7 flex flex-wrap justify-center lg:justify-start gap-2.5 text-sm">
+          <span class="rounded-full border border-gold/40 px-4 py-1.5 text-goldlt">Thư giãn tâm trí</span>
+          <span class="rounded-full border border-gold/40 px-4 py-1.5 text-goldlt">Tăng sự tập trung</span>
+          <span class="rounded-full border border-gold/40 px-4 py-1.5 text-goldlt">Tái tạo năng lượng</span>
+        </div>
+
+        <div class="mt-9 flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start">
+          <a href="https://vn.shp.ee/UcaXDjbS" target="_blank" rel="noopener" class="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-gold2 to-gold px-7 py-3.5 text-ink font-600 text-base shadow-xl shadow-gold/25 hover:from-goldlt hover:to-gold2 transition-all duration-200">
+            Mua ngay trên Shopee
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#ingredient" class="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full glass px-7 py-3.5 text-cream font-500 text-base hover:text-gold2 transition-colors duration-200">
+            Tìm hiểu thành phần
+          </a>
+        </div>
+
+        <p class="mt-6 text-sm text-mist/60">Hộp 60g · 20 gói × 3g · Tiện lợi mang theo mọi nơi</p>
+      </div>
+
+      <!-- product image -->
+      <div class="reveal flex justify-center lg:justify-end">
+        <div class="relative">
+          <div class="absolute -inset-6 rounded-full bg-gold/10 blur-3xl"></div>
+          <img src="vn-11134207-81ztc-moqgdon7tp8sab.webp" alt="Hộp Trà Tĩnh Trí và tách trà thảo mộc nóng" class="float relative w-full max-w-md rounded-3xl gold-ring" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="bg-navy border-y border-gold/15">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- item -->
+      <div class="reveal flex items-center gap-3 justify-center lg:justify-start">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 3c-3 4-7 4-7 9a7 7 0 0 0 14 0c0-5-4-5-7-9z"/></svg>
+        <span class="text-sm font-500 text-cream/90">Thành phần<br>an toàn</span>
+      </div>
+      <div class="reveal flex items-center gap-3 justify-center lg:justify-start">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19h16M6 19V9a6 6 0 0 1 12 0v10M9 5c0-1 .5-2 1-2.5M13 5c0-1 .5-2 1-2.5"/></svg>
+        <span class="text-sm font-500 text-cream/90">Hương vị<br>thơm ngon</span>
+      </div>
+      <div class="reveal flex items-center gap-3 justify-center lg:justify-start">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <span class="text-sm font-500 text-cream/90">Chất lượng<br>đảm bảo</span>
+      </div>
+      <div class="reveal flex items-center gap-3 justify-center lg:justify-start">
+        <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="6"/><path d="M9 14l-1.5 7L12 19l4.5 2L15 14"/></svg>
+        <span class="text-sm font-500 text-cream/90">Sản phẩm<br>chính hãng</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / STORY ============ -->
+  <section id="about" class="relative bg-navy py-20 sm:py-28 overflow-hidden">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center">
+      <div class="reveal">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Giới thiệu sản phẩm</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad leading-tight">Trà Thổ Nhân Sâm — Tĩnh Trí</h2>
+        <div class="gold-line w-44 mx-auto mt-5"></div>
+      </div>
+
+      <div class="reveal mt-8 space-y-5 text-base sm:text-lg leading-relaxed text-mist/85">
+        <p>
+          Là sản phẩm trà thảo mộc được chế biến từ cây
+          <span class="text-gold2 font-500">Thổ Nhân Sâm (Talinum paniculatum)</span>
+          — một loại dược liệu giàu hợp chất sinh học tự nhiên. Sản phẩm được nghiên cứu nhằm mang đến
+          giải pháp hỗ trợ <span class="text-cream">thư giãn tinh thần, giảm căng thẳng</span> và
+          <span class="text-cream">duy trì sự tập trung</span> trong cuộc sống hiện đại.
+        </p>
+        <p>
+          Với hương vị thảo mộc dịu nhẹ, dễ uống, trà phù hợp cho người thường xuyên làm việc trí óc,
+          học tập căng thẳng hoặc cần duy trì trạng thái tỉnh táo và tập trung trong ngày.
+        </p>
+      </div>
+
+      <div class="reveal mt-10 inline-flex flex-wrap justify-center gap-x-8 gap-y-4 rounded-2xl glass px-8 py-5">
+        <div class="text-center">
+          <p class="font-display text-3xl font-700 text-gold-grad">100%</p>
+          <p class="text-xs text-mist/70 mt-1">Thảo mộc tự nhiên</p>
+        </div>
+        <div class="w-px bg-gold/25 hidden sm:block"></div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-700 text-gold-grad">12+</p>
+          <p class="text-xs text-mist/70 mt-1">Tháng sinh trưởng</p>
+        </div>
+        <div class="w-px bg-gold/25 hidden sm:block"></div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-700 text-gold-grad">3g</p>
+          <p class="text-xs text-mist/70 mt-1">Gói tiện lợi × 20</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section id="problem" class="relative nightsky py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Có thể bạn đang gặp</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad">Bạn có đang…?</h2>
+        <div class="gold-line w-40 mx-auto mt-5"></div>
+        <p class="mt-5 text-mist/80">Những dấu hiệu quen thuộc của một tâm trí quá tải, căng thẳng kéo dài.</p>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- 01 -->
+        <article class="reveal glass rounded-2xl p-6 transition-colors duration-200">
+          <div class="flex items-center gap-4">
+            <span class="font-display text-3xl font-700 text-gold/50">01</span>
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 15s1.5-2 4-2 4 2 4 2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <h3 class="mt-4 font-600 text-cream text-lg">Dễ cáu hoặc mất kiên nhẫn</h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Cảm xúc thất thường</li>
+            <li>• Dễ bực bội với những chuyện nhỏ</li>
+            <li>• Mất kiểm soát cảm xúc</li>
+          </ul>
+        </article>
+        <!-- 02 -->
+        <article class="reveal glass rounded-2xl p-6 transition-colors duration-200">
+          <div class="flex items-center gap-4">
+            <span class="font-display text-3xl font-700 text-gold/50">02</span>
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a4 4 0 0 1-1-7.9A4 4 0 0 1 15 7a3.5 3.5 0 0 1 1 6.8M9 18h6M10 21h4"/></svg>
+          </div>
+          <h3 class="mt-4 font-600 text-cream text-lg">Đầu óc quá tải, suy nghĩ liên tục</h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Suy nghĩ nhiều, khó dứt</li>
+            <li>• Khó tập trung vào 1 việc</li>
+            <li>• Luôn căng thẳng tinh thần</li>
+          </ul>
+        </article>
+        <!-- 03 -->
+        <article class="reveal glass rounded-2xl p-6 transition-colors duration-200">
+          <div class="flex items-center gap-4">
+            <span class="font-display text-3xl font-700 text-gold/50">03</span>
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+          </div>
+          <h3 class="mt-4 font-600 text-cream text-lg">Ngủ không sâu</h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Khó đi vào giấc ngủ</li>
+            <li>• Ngủ chập chờn, dễ tỉnh giữa đêm</li>
+            <li>• Sáng dậy mệt mỏi, uể oải</li>
+          </ul>
+        </article>
+        <!-- 04 -->
+        <article class="reveal glass rounded-2xl p-6 transition-colors duration-200">
+          <div class="flex items-center gap-4">
+            <span class="font-display text-3xl font-700 text-gold/50">04</span>
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.9.4-1.5 1.2-1.5 2.2M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3 class="mt-4 font-600 text-cream text-lg">Khó bình tĩnh khi ra quyết định</h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Dễ bị cảm xúc chi phối</li>
+            <li>• Phân vân, thiếu rõ ràng</li>
+            <li>• Sợ sai, lo lắng về kết quả</li>
+          </ul>
+        </article>
+        <!-- 05 -->
+        <article class="reveal glass rounded-2xl p-6 transition-colors duration-200">
+          <div class="flex items-center gap-4">
+            <span class="font-display text-3xl font-700 text-gold/50">05</span>
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19h16M7 16l3-4 3 2 4-6"/></svg>
+          </div>
+          <h3 class="mt-4 font-600 text-cream text-lg">Làm nhiều nhưng hiệu suất giảm</h3>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Bận rộn nhưng kết quả không như ý</li>
+            <li>• Mệt mỏi, không còn hứng thú</li>
+            <li>• Cảm giác "đuối sức" dù chưa làm nhiều</li>
+          </ul>
+        </article>
+        <!-- solution teaser -->
+        <article class="reveal rounded-2xl p-6 gold-ring bg-gradient-to-br from-steel/60 to-navy flex flex-col justify-center text-center">
+          <svg viewBox="0 0 24 24" class="w-10 h-10 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19h2l9-9a2.8 2.8 0 0 0-4-4l-9 9z"/><path d="M14 6l4 4M16 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/></svg>
+          <h3 class="mt-4 font-display font-700 text-2xl text-gold-grad">Đã có Trà Tĩnh Trí</h3>
+          <p class="mt-2 text-sm text-mist/80">Giải pháp dịu nhẹ từ thảo mộc cho tâm trí an yên mỗi ngày.</p>
+          <a href="#benefits" class="cursor-pointer mt-4 text-gold2 text-sm font-500 hover:text-goldlt transition-colors duration-200">Xem công dụng →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS ============ -->
+  <section id="benefits" class="bg-navy py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Vì sao chọn Trà Tĩnh Trí</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad">4 lợi ích cốt lõi</h2>
+        <div class="gold-line w-40 mx-auto mt-5"></div>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="reveal glass rounded-2xl p-7 text-center transition-colors duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
+          <span class="inline-flex w-14 h-14 items-center justify-center rounded-full border border-gold/50">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20C6 20 4 16 4 12c4 0 6 2 7 5M13 20c5 0 7-4 7-8-4 0-6 2-7 5M12 20V9"/></svg>
+          </span>
+          <h3 class="mt-4 font-600 text-cream text-lg">Thảo mộc tự nhiên</h3>
+          <p class="mt-2 text-sm text-mist/75">Chiết xuất từ dược liệu quý, dịu nhẹ và lành tính với cơ thể.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-7 text-center transition-colors duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
+          <span class="inline-flex w-14 h-14 items-center justify-center rounded-full border border-gold/50">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>
+          </span>
+          <h3 class="mt-4 font-600 text-cream text-lg">Tăng sự tập trung</h3>
+          <p class="mt-2 text-sm text-mist/75">Hỗ trợ tư duy rõ ràng, giữ sự minh mẫn khi làm việc trí óc.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-7 text-center transition-colors duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
+          <span class="inline-flex w-14 h-14 items-center justify-center rounded-full border border-gold/50">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a4 4 0 0 1-1-7.9A4 4 0 0 1 15 7a3.5 3.5 0 0 1 1 6.8M9 18h6M10 21h4"/></svg>
+          </span>
+          <h3 class="mt-4 font-600 text-cream text-lg">Xua tan stress</h3>
+          <p class="mt-2 text-sm text-mist/75">Giảm căng thẳng thần kinh, giúp trí não bền bỉ suốt ngày dài.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-7 text-center transition-colors duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
+          <span class="inline-flex w-14 h-14 items-center justify-center rounded-full border border-gold/50">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 9h11a3 3 0 0 1 0 6h-1M5 9v6a3 3 0 0 0 3 3h5a3 3 0 0 0 3-3M8 5c0-1 .5-1.5 0-3M12 5c0-1 .5-1.5 0-3"/></svg>
+          </span>
+          <h3 class="mt-4 font-600 text-cream text-lg">Dễ pha, tiện lợi</h3>
+          <p class="mt-2 text-sm text-mist/75">Gói 3g nhỏ gọn, chỉ cần nước nóng — sẵn sàng trong 2 phút.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GROWTH JOURNEY ============ -->
+  <section id="journey" class="relative bg-ink py-20 sm:py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Nguồn gốc tinh hoa</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad">Hành trình sinh trưởng khắc nghiệt</h2>
+        <p class="mt-3 font-display italic text-cream/90 text-lg">Tinh túy từ thiên nhiên — năng lượng cho trí óc</p>
+        <div class="gold-line w-48 mx-auto mt-5"></div>
+        <p class="mt-5 text-mist/80">Trải qua hơn 12 tháng sinh trưởng tự nhiên giữa địa hình khắc nghiệt, Thổ Nhân Sâm tích lũy hàm lượng dược chất cao mang đến nguồn năng lượng tự nhiên cho cơ thể và trí óc.</p>
+      </div>
+
+      <!-- timeline -->
+      <div class="reveal mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="glass rounded-2xl p-5 text-center">
+          <span class="font-display text-2xl font-700 text-gold-grad">1</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Gieo hạt</h3>
+          <p class="text-xs text-gold2/80">0 – 15 ngày</p>
+          <p class="mt-2 text-xs text-mist/70">Hạt gieo trong đất tơi xốp, bắt đầu nảy mầm.</p>
+        </div>
+        <div class="glass rounded-2xl p-5 text-center">
+          <span class="font-display text-2xl font-700 text-gold-grad">2</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Nảy mầm</h3>
+          <p class="text-xs text-gold2/80">15 – 30 ngày</p>
+          <p class="mt-2 text-xs text-mist/70">Mầm non vươn lên khỏi mặt đất, bắt đầu quang hợp.</p>
+        </div>
+        <div class="glass rounded-2xl p-5 text-center">
+          <span class="font-display text-2xl font-700 text-gold-grad">3</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Sinh trưởng</h3>
+          <p class="text-xs text-gold2/80">1 – 3 tháng</p>
+          <p class="mt-2 text-xs text-mist/70">Thân lá, rễ lớn mạnh, tích lũy dưỡng chất.</p>
+        </div>
+        <div class="glass rounded-2xl p-5 text-center">
+          <span class="font-display text-2xl font-700 text-gold-grad">4</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Phát triển</h3>
+          <p class="text-xs text-gold2/80">3 – 6 tháng</p>
+          <p class="mt-2 text-xs text-mist/70">Thân cứng cáp, rễ phình to, tích lũy dược chất.</p>
+        </div>
+        <div class="glass rounded-2xl p-5 text-center">
+          <span class="font-display text-2xl font-700 text-gold-grad">5</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Trưởng thành</h3>
+          <p class="text-xs text-gold2/80">6 – 12 tháng</p>
+          <p class="mt-2 text-xs text-mist/70">Cây ra hoa, rễ to khỏe — dược tính cao nhất.</p>
+        </div>
+        <div class="glass rounded-2xl p-5 text-center gold-ring">
+          <span class="font-display text-2xl font-700 text-gold-grad">6</span>
+          <h3 class="mt-1 font-600 text-cream text-sm">Thu hoạch</h3>
+          <p class="text-xs text-gold2/80">12+ tháng</p>
+          <p class="mt-2 text-xs text-mist/70">Thu hoạch thủ công, chọn lọc củ đạt chất lượng tối ưu.</p>
+        </div>
+      </div>
+
+      <!-- showcase image -->
+      <div class="reveal mt-10">
+        <img src="vn-11134210-81ztc-motkmq47qk9abf.webp" alt="Hành trình sinh trưởng 6 giai đoạn của cây Thổ Nhân Sâm" class="w-full rounded-3xl gold-ring" loading="lazy" />
+      </div>
+
+      <!-- natural conditions -->
+      <div class="reveal mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Ánh nắng tự nhiên</p>
+        </div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 19l6-9 4 5 3-4 5 8z"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Địa hình khắc nghiệt</p>
+        </div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c-3 4-7 4-7 9a7 7 0 0 0 14 0c0-5-4-5-7-9z"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Tưới nước tự nhiên</p>
+        </div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Chịu lạnh & khô hạn</p>
+        </div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 11c2-3 6-3 6 0M12 11c-2-3-6-3-6 0M4 14c2 4 14 4 16 0"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Chăm sóc thủ công</p>
+        </div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-gold2" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <p class="mt-2 text-xs text-mist/85">Chất lượng tinh khiết</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INGREDIENT ============ -->
+  <section id="ingredient" class="relative nightsky py-20 sm:py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Thành phần quý</p>
+        <h2 class="mt-3 font-display font-800 text-4xl sm:text-6xl text-gold-grad">THỔ NHÂN SÂM</h2>
+        <p class="mt-3 font-display italic text-cream/90 text-lg">Món quà thiên nhiên cho sức khỏe và trí óc</p>
+        <div class="gold-line w-48 mx-auto mt-5"></div>
+        <p class="mt-5 text-mist/80">Dược liệu quý hỗ trợ cơ thể thích nghi với căng thẳng, mệt mỏi và tăng sức bền tinh thần.</p>
+      </div>
+
+      <div class="mt-14 grid lg:grid-cols-3 gap-6">
+        <div class="reveal glass rounded-2xl p-7">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="8" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="12" cy="17" r="2"/><path d="M7.7 9.3 11 15M16.3 9.3 13 15M8 8h8"/></svg>
+            <h3 class="font-600 text-cream text-lg">Saponin triterpenoid</h3>
+          </div>
+          <p class="mt-3 text-sm text-mist/75">Hỗ trợ thích nghi stress, giảm căng thẳng thần kinh.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-7">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <h3 class="font-600 text-cream text-lg">Flavonoid</h3>
+          </div>
+          <p class="mt-3 text-sm text-mist/75">Chống oxy hóa, bảo vệ tế bào khỏi tác nhân gây hại.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-7">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M12 8v6M9 11h6"/></svg>
+            <h3 class="font-600 text-cream text-lg">Polysaccharide</h3>
+          </div>
+          <p class="mt-3 text-sm text-mist/75">Hỗ trợ miễn dịch, phục hồi và tái tạo cơ thể.</p>
+        </div>
+      </div>
+
+      <!-- secondary benefits row -->
+      <div class="reveal mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Thảo mộc tự nhiên</div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Trí não bền bỉ</div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Tăng sự tập trung</div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Tăng cường đề kháng</div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Phục hồi thể trạng</div>
+        <div class="rounded-xl border border-gold/20 bg-navy2/40 p-4 text-center text-sm text-mist/85">Dễ pha tiện lợi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO SHOULD USE ============ -->
+  <section id="who" class="bg-navy py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Dành cho ai</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad">Ai nên dùng?</h2>
+        <div class="gold-line w-40 mx-auto mt-5"></div>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 gap-6">
+        <article class="reveal glass rounded-2xl p-7 transition-colors duration-200">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18a4 4 0 0 1-1-7.9A4 4 0 0 1 15 7a3.5 3.5 0 0 1 1 6.8M9 18h6"/></svg>
+            <h3 class="font-600 text-cream text-lg">Người làm việc trí óc áp lực cao</h3>
+          </div>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Giúp thư giãn tinh thần</li>
+            <li>• Giảm căng thẳng, mệt mỏi</li>
+            <li>• Tăng khả năng tập trung</li>
+          </ul>
+        </article>
+        <article class="reveal glass rounded-2xl p-7 transition-colors duration-200">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+            <h3 class="font-600 text-cream text-lg">Người hay thức khuya làm việc</h3>
+          </div>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Giúp tỉnh táo, minh mẫn</li>
+            <li>• Hỗ trợ duy trì hiệu suất</li>
+            <li>• Giảm cảm giác uể oải</li>
+          </ul>
+        </article>
+        <article class="reveal glass rounded-2xl p-7 transition-colors duration-200">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+            <h3 class="font-600 text-cream text-lg">Người cần ra quyết định liên tục</h3>
+          </div>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Hỗ trợ tư duy rõ ràng</li>
+            <li>• Giữ tinh thần ổn định</li>
+            <li>• Tăng khả năng xử lý tình huống</li>
+          </ul>
+        </article>
+        <article class="reveal glass rounded-2xl p-7 transition-colors duration-200">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" class="w-9 h-9 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            <h3 class="font-600 text-cream text-lg">Freelancer / Designer / Coder</h3>
+          </div>
+          <ul class="mt-3 space-y-1.5 text-sm text-mist/75">
+            <li>• Tăng tập trung khi làm việc</li>
+            <li>• Duy trì cảm hứng sáng tạo</li>
+            <li>• Đồng hành cùng hiệu suất dài lâu</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO USE ============ -->
+  <section id="how" class="relative nightsky py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <p class="text-gold2 font-500 tracking-[.2em] text-sm uppercase">Đơn giản trong 4 bước</p>
+        <h2 class="mt-3 font-display font-700 text-3xl sm:text-5xl text-gold-grad">Hướng dẫn sử dụng</h2>
+        <div class="gold-line w-44 mx-auto mt-5"></div>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- step -->
+        <div class="reveal glass rounded-2xl p-6 relative">
+          <span class="absolute -top-4 left-6 w-9 h-9 rounded-full bg-gradient-to-b from-gold2 to-gold text-ink font-700 flex items-center justify-center">1</span>
+          <svg viewBox="0 0 24 24" class="w-10 h-10 mt-3 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 4h8l-1 5H9zM7 9h10l-1 9a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"/></svg>
+          <h3 class="mt-3 font-600 text-cream">Rót 1 gói (3g) vào cốc</h3>
+          <p class="mt-1.5 text-sm text-mist/70">Gói 3g tiện lợi, dễ mang theo mọi lúc, mọi nơi.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-6 relative">
+          <span class="absolute -top-4 left-6 w-9 h-9 rounded-full bg-gradient-to-b from-gold2 to-gold text-ink font-700 flex items-center justify-center">2</span>
+          <svg viewBox="0 0 24 24" class="w-10 h-10 mt-3 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 8h9a3 3 0 0 1 0 6h-1M5 8v7a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3M18 5v2M21 6v2"/></svg>
+          <h3 class="mt-3 font-600 text-cream">Rót 150–200ml nước nóng</h3>
+          <p class="mt-1.5 text-sm text-mist/70">Dùng nước 80–90°C để hương vị thảo mộc trọn vẹn.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-6 relative">
+          <span class="absolute -top-4 left-6 w-9 h-9 rounded-full bg-gradient-to-b from-gold2 to-gold text-ink font-700 flex items-center justify-center">3</span>
+          <svg viewBox="0 0 24 24" class="w-10 h-10 mt-3 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3l-2 5M9 21l2-6M6 11h12l-1.5 7a2 2 0 0 1-2 1.7H9.5a2 2 0 0 1-2-1.7z"/></svg>
+          <h3 class="mt-3 font-600 text-cream">Khuấy đều & để 1–2 phút</h3>
+          <p class="mt-1.5 text-sm text-mist/70">Để dưỡng chất được phát huy tốt nhất.</p>
+        </div>
+        <div class="reveal glass rounded-2xl p-6 relative">
+          <span class="absolute -top-4 left-6 w-9 h-9 rounded-full bg-gradient-to-b from-gold2 to-gold text-ink font-700 flex items-center justify-center">4</span>
+          <svg viewBox="0 0 24 24" class="w-10 h-10 mt-3 text-gold2" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 11h10a3 3 0 0 1 0 6h-1M5 11v4a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3M9 7c-.5-1 .5-2 0-3M13 7c-.5-1 .5-2 0-3"/></svg>
+          <h3 class="mt-3 font-600 text-cream">Dùng chậm rãi & tận hưởng</h3>
+          <p class="mt-1.5 text-sm text-mist/70">Uống từng ngụm nhỏ, cảm nhận sự dịu nhẹ từ thảo mộc.</p>
+        </div>
+      </div>
+
+      <!-- when to use -->
+      <div class="reveal mt-8 grid sm:grid-cols-2 gap-5">
+        <div class="rounded-2xl gold-ring bg-navy2/50 p-6 flex items-start gap-4">
+          <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3a6 6 0 0 0-6 6c0 4 3 6 3 9h6c0-3 3-5 3-9a6 6 0 0 0-6-6zM9 22h6"/></svg>
+          <p class="text-sm text-mist/85"><span class="font-600 text-cream">Khi căng thẳng, mệt mỏi</span> — cần thư giãn và lấy lại cân bằng.</p>
+        </div>
+        <div class="rounded-2xl gold-ring bg-navy2/50 p-6 flex items-start gap-4">
+          <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold2 shrink-0" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+          <p class="text-sm text-mist/85"><span class="font-600 text-cream">Trước khi làm việc buổi tối</span> — để tập trung và hiệu quả hơn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER / CTA ============ -->
+  <section id="order" class="bg-navy py-20 sm:py-28">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="reveal rounded-3xl gold-ring bg-gradient-to-br from-steel/70 via-navy2 to-navy p-8 sm:p-12 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="font-display font-700 text-3xl sm:text-4xl text-gold-grad">Trao cho tâm trí một khoảng lặng</h2>
+          <p class="mt-4 text-mist/85">Bắt đầu mỗi ngày bền bỉ hơn với một tách Trà Tĩnh Trí. Hộp 60g — 20 gói × 3g, đủ dùng cho 20 lần thư giãn.</p>
+          <ul class="mt-6 space-y-2.5 text-sm">
+            <li class="flex items-center gap-2.5 text-cream/90"><svg viewBox="0 0 24 24" class="w-5 h-5 text-gold2" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4 10-11"/></svg> Thành phần an toàn, lành tính</li>
+            <li class="flex items-center gap-2.5 text-cream/90"><svg viewBox="0 0 24 24" class="w-5 h-5 text-gold2" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4 10-11"/></svg> Hương vị thảo mộc thơm ngon</li>
+            <li class="flex items-center gap-2.5 text-cream/90"><svg viewBox="0 0 24 24" class="w-5 h-5 text-gold2" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4 10-11"/></svg> Sản phẩm chính hãng, chất lượng đảm bảo</li>
+          </ul>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3.5">
+            <a href="https://vn.shp.ee/UcaXDjbS" target="_blank" rel="noopener" class="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-gold2 to-gold px-7 py-3.5 text-ink font-600 shadow-xl shadow-gold/25 hover:from-goldlt hover:to-gold2 transition-all duration-200">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12zM6 6L5 3H2M9 20a1 1 0 1 0 0 .01M18 20a1 1 0 1 0 0 .01"/></svg>
+              Mua ngay trên Shopee
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="relative">
+            <div class="absolute -inset-5 rounded-full bg-gold/10 blur-3xl"></div>
+            <img src="vn-11134207-81ztc-moqgfyco4p3g3e.webp" alt="Gói Trà Tĩnh Trí 3g và hướng dẫn pha" class="relative w-full max-w-xs rounded-2xl gold-ring" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink border-t border-gold/15">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full border border-gold/60">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-gold2" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+          </span>
+          <span class="font-display text-xl font-700 text-gold-grad">TRÀ TĨNH TRÍ</span>
+        </div>
+        <p class="mt-4 text-sm text-mist/65 max-w-xs">Trà thảo mộc dạng bột pha uống từ Thổ Nhân Sâm. Thư giãn tâm trí · Tăng sự tập trung · Tái tạo năng lượng.</p>
+      </div>
+      <div>
+        <h4 class="font-600 text-cream">Khám phá</h4>
+        <ul class="mt-4 space-y-2 text-sm text-mist/65">
+          <li><a href="#problem" class="hover:text-gold2 transition-colors duration-200">Vấn đề thường gặp</a></li>
+          <li><a href="#benefits" class="hover:text-gold2 transition-colors duration-200">Công dụng</a></li>
+          <li><a href="#ingredient" class="hover:text-gold2 transition-colors duration-200">Thành phần</a></li>
+          <li><a href="#how" class="hover:text-gold2 transition-colors duration-200">Cách dùng</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-600 text-cream">Mua hàng</h4>
+        <ul class="mt-4 space-y-3 text-sm text-mist/65">
+          <li>
+            <a href="https://vn.shp.ee/UcaXDjbS" target="_blank" rel="noopener" class="cursor-pointer inline-flex items-center gap-2 rounded-full bg-gradient-to-b from-gold2 to-gold px-5 py-2.5 text-ink font-600 hover:from-goldlt hover:to-gold2 transition-all duration-200">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12zM6 6L5 3H2M9 20a1 1 0 1 0 0 .01M18 20a1 1 0 1 0 0 .01"/></svg>
+              Gian hàng Shopee
+            </a>
+          </li>
+          <li class="pt-1">Khối lượng tịnh: 60g (20 gói × 3g)</li>
+          <li>Thành phần: Thổ Nhân Sâm (Talinum paniculatum)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gold/10 py-5">
+      <p class="text-center text-xs text-mist/50">© 2026 Trà Tĩnh Trí. Sản phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal (respects reduced-motion via CSS fallback)
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (e) { e.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(function (e, i) {
+        e.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
+        io.observe(e);
+      });
+    })();
+  </script>
+</body>
+</html>
